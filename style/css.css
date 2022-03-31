@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    grid-template-rows: repeat(3, 33vh);
+    grid-template-columns: repeat(3, 33vw);
+}
+
+a{
+    text-decoration: none;    
+}
+
+a:visited{
+    color: inherit;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style-type: "👌";
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.row{
+    grid-column: 2;
+}
+
+.alin{
+    text-align:left;
+}
