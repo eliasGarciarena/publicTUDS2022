@@ -14,11 +14,13 @@ body{
 }
 
 a{
-    text-decoration: none;    
+    text-decoration: none;
+    color: white;
 }
 
 a:visited{
-    color: inherit;
+    color: green;
+    background-color: white;
 }
 
 ul{
@@ -47,4 +49,8 @@ th, td{
 
 .alin{
     text-align:left !important;
+}
+
+.carrusel{
+    font-weight: bolder;    
 }
