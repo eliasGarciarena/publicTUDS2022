@@ -1,0 +1,70 @@
+:root{
+    --widthMenu: 60%;
+}
+
+body{
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a{
+    color: inherit;    
+}
+
+.containerMenu{
+    padding: 10px;
+    background-color: #972700;
+    display: flex;
+    justify-content: center;
+}
+
+.floatL{
+    float: left;
+}
+
+.floatR{
+    float: right;
+}
+
+.listaMenu{
+    margin-left: 5%;
+}
+
+.menu{
+    margin-top: 1.25%;
+    width: var(--widthMenu);
+    color: white;
+}
+
+.redesSociales{
+    margin-top: 1%;
+    display: flex;
+    font-size: 23px;
+    color: white;
+}
+
+.listaSocial{
+    margin-left: 60%;
+}
+
+.tieneHijo:after{
+    content: "\f107";
+    margin-left: 5px;
+    font-family: FontAwesome;
+    font-size: 10px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
