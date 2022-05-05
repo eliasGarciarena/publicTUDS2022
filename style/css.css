@@ -1,14 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    text-align: center;
-    display: grid;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    grid-template-rows: repeat(3, 33vh);
-    grid-template-columns: repeat(3, 33vw);
     background-color: black;
     color: green;
 }
@@ -43,14 +35,49 @@ th, td{
     padding: 3px;
 }
 
-.row{
-    grid-column: 2;
-}
-
 .alin{
     text-align:left !important;
 }
 
 .carrusel{
-    font-weight: bolder;    
+    font-weight: bolder;
+}
+
+.sliderContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 33vw);
+    grid-template-rows: repeat(2, 40vh);
+}
+
+.hidden{
+    visibility: show;
+}
+
+.menu{
+    width: 100%;
+    display:flex;
+    justify-content: left;
+}
+
+.slider{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.lista{
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;    
+    justify-content: center;
+    grid-row: 2;
+}
+
+.abs{
+    position: absolute;
+}
+
+.boton{
+    grid-row: 1;
+    grid-column: 3;
+    font-size: 80px;
 }

@@ -26,6 +26,7 @@ a{
     background-color: #972700;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .floatL{
@@ -67,4 +68,17 @@ a{
 .banner{
     display: flex;
     justify-content: center;
+}
+
+.tablaContainer{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    border-spacing: 1;
+}
+
+th, td{
+    border: 2px solid black;
 }
