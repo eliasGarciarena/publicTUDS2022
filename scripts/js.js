@@ -1,14 +1,13 @@
-function slider(){
-    let obj = document.getElementById("hidden");
-    if(estaVisible(obj)){
-        obj.style.display = "none";
-        console.log("asd");
-    } else{
-        obj.style.display = "block";
-        console.log("asdasds");
-    }
-}
+let carCont = 0, cantidad = 2;
 
-function estaVisible(obj) {
-    return obj.offsetWidth > 0 && obj.offsetHeight > 0;
+function slider(){
+    let obj = document.getElementById("vista");
+
+    if(carCont == cantidad-1){
+        carCont = 0;
+        obj.src = "assets/0.png";
+    } else{
+        carCont++;
+        obj.src = "assets/" + carCont + ".png";
+    }
 }
