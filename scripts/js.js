@@ -31,6 +31,7 @@ function validar(event){
     if(errors!==0){
         console.log(stringBuilder);
     }
+
     return false;
 }
 
@@ -40,10 +41,16 @@ function vNombre(){
     if(obj.value==""){
         errors++;
         alert("NOMBRE no puede estar vacío!");
-    }
-    if(obj.value.length>nombreCap){
-        errors++;
-        alert("NOMBRE no puede exceder los " + nombreCap + " caracteres!");
+    } else{
+        if(!isNaN(obj.value)){
+            errors++;
+            alert("NOMBRE no puede ser un número!");
+        } else{
+            if(obj.value.length>nombreCap){
+                errors++;
+                alert("NOMBRE no puede exceder los " + nombreCap + " caracteres!");
+            }
+        }
     }
 }
 
