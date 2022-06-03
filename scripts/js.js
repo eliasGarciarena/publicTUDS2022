@@ -1,4 +1,4 @@
-let carCont = 0, cantidad = 3, errors;
+let carCont = 0, cantidad = 3, errors, nombreCap = 16;
 
 window.onload = function getMenu(){
     document.getElementById("menu").innerHTML = "    <div class='logo' style='color:green;'>    <h1 style='text-align: center; width: 300px;'>Título Pru<span style='color:white;'>eba</span><br><span style='text-decoration:overline;'>Programación</span><span style='color:white; text-decoration: overline;'>&nbsp;Web I&nbsp;</span></h1>    </div>";
@@ -41,6 +41,10 @@ function vNombre(){
         errors++;
         alert("NOMBRE no puede estar vacío!");
     }
+    if(obj.value.length>nombreCap){
+        errors++;
+        alert("NOMBRE no puede exceder los " + nombreCap + " caracteres!");
+    }
 }
 
 function vEdad(){
@@ -50,7 +54,7 @@ function vEdad(){
         errors++;
         alert("EDAD no puede estar vacío!");
     } else if (!isNaN(obj.value)){
-        if(obj.value<=0){
+        if(obj.value<=0 || obj.value>150){
             errors++;
             alert("EDAD inválida!");
         }
