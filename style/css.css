@@ -1,105 +1,136 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: black;
     color: green;
+    font-weight: bolder;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-a:visited{
+a:visited {
     color: green;
 }
 
-ul{
-    margin:0;
-    padding:0;
+ul {
+    margin: 0;
+    padding: 0;
     list-style-type: "🔄";
 }
 
-#pic2{
+#pic2 {
     list-style-type: "⛔";
 }
 
-#pic3{
+#pic3 {
     list-style-type: "🧬";
 }
 
-th, td{
+th,
+td {
     border: 1px solid white;
     color: white;
     padding: 3px;
 }
 
-.alin{
-    text-align:left !important;
+.alin {
+    text-align: left;
 }
 
-.carrusel{
-    font-weight: bolder;
+.sliderContainer {
+    display: flex;
+    flex-direction: column;
 }
 
-.sliderContainer{
-    display: grid;
-    grid-template-columns: repeat(3, 33vw);
-    grid-template-rows: repeat(2, 40vh);
-}
-
-.hidden{
+.hidden {
     display: none;
-}
-
-.menu{
-    width: 100%;
-    display:flex;
-    justify-content: left;
-}
-
-.slider{
-    grid-row: 1;
-    grid-column: 2;
-}
-
-.lista{
-    grid-row: 2;
-    grid-column: 2;
-    display: flex;    
-    justify-content: center;
-}
-
-.abs{
     position: absolute;
 }
 
-.boton{
-    grid-row: 2;
-    grid-column: 3;
-    font-size: 80px;
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: left;
 }
 
-.logo{
-    margin-left: 10px;
-}
-.center{
+.lista {
     display: flex;
     justify-content: center;
 }
-.formContainer{
-    margin-top: 15vh;
+
+.boton {
+    font-size: 80px;
+    margin-top: 8%;
+    margin-bottom: 4%;
 }
-.matrix{
-    display: grid;
-    grid-template-columns: repeat(2, 12vw);
-    grid-template-rows: repeat(3, 4vw);
-    text-align: center;
+
+.logo {
+    margin-left: 10px;
 }
-#form{
-    padding: 2vw 4vw 2vw 2vw;
+
+.formContainer {
+    margin-top: 12vh;
+}
+
+.matrix {
+    margin-left: 15vw;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 2vw 2vw 2vw 2vw;
     background-color: white;
     border: solid 8px green;
     font-size: 120%;
     font-weight: bolder;
+    text-align: center;
+    position: fixed;
+}
+
+#dinamiContent{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    text-align: center;
+    margin-right: 15vw;
+    width: 25vw;
+    color: white;
+}
+
+#errorsContainer{
+    padding: 4%;
+    margin-bottom: 3vw;
+}
+
+.error{
+    border: solid red 5px;
+}
+
+#tabla{
+    margin-top: 4%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+#infoContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#info{
+    background-color: white;    
+    border: solid 5px green;
+    padding: 2%;
+    max-width: 800px;
+    text-align: center;
+}
+
+#pieImagen{
+    font-size: 12px;
+    font-style: italic;
 }
